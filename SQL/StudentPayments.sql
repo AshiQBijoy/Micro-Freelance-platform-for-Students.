@@ -7,8 +7,6 @@ BEGIN
         Amount DECIMAL(10,2) NOT NULL,
         PaymentDate DATETIME DEFAULT GETDATE(),
         Description NVARCHAR(200)
-        -- FOREIGN KEY (StudentID) REFERENCES Users(studentId)  -- skip
-        -- FOREIGN KEY (WorkID) REFERENCES AdminWork(WorkID)  -- keep if WorkID int
     )
 END
 
