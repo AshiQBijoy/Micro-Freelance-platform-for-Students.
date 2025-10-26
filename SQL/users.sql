@@ -1,4 +1,4 @@
-﻿-- 1. Verify বা create table যদি আগে থেকে না থাকে
+
 IF OBJECT_ID('dbo.users', 'U') IS NULL
 BEGIN
     CREATE TABLE dbo.users
