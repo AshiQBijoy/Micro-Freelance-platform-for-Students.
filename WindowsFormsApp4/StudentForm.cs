@@ -39,15 +39,10 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Panel এ আগে যা আছে তা মুছে দাও
             panelContainer.Controls.Clear();
 
-            // MyProfile UserControl তৈরি
-            // ধরো তোমার Student info variables আছে: currentStudentName, currentUsername, currentStudentID
             MyProfile myProfileUC = new MyProfile(currentStudentName, currentUsername, currentStudentID);
 
-
-            // Panel-এ fill করে add করো
             myProfileUC.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(myProfileUC);
 
